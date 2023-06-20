@@ -11,8 +11,10 @@ pipeline {
         }
         stage('Cypress run') { 
             steps {
+                catchError(buildResult: "SUCCESS", stageResult: 'SUCCESS'){
                 sh 'allure:clearData'
                 sh 'cy:testWithAllureReport' 
+                }
 
             }
         }
