@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jun 15 20:21:16 GMT+02:00 2023","Thu Jun 15 20:21:29 GMT+02:00 2023","12626","","","","","","Order",""
+"passed","Thu Jun 15 20:21:37 GMT+02:00 2023","Thu Jun 15 20:21:47 GMT+02:00 2023","9936","","","","","","Registration",""
+"failed","Thu Jun 15 20:21:03 GMT+02:00 2023","Thu Jun 15 20:21:11 GMT+02:00 2023","7666","","","","","","Authorization",""

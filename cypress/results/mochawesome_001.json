@@ -1,0 +1,86 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-06-15T18:21:16.366Z",
+    "end": "2023-06-15T18:21:29.053Z",
+    "duration": 12687,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "db613647-1896-437a-8551-0d99d03f81b1",
+      "title": "",
+      "fullFile": "cypress/e2e/order.cy.js",
+      "file": "cypress/e2e/order.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Order",
+          "fullTitle": "Order",
+          "timedOut": null,
+          "duration": 12622,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "(0, _helper.login)(_user.default);\ncy.get('#filter_keyword').type('i').closest(\"form\").submit();\n(0, _helper.findNewProd)('Benefit Bella Bamba');\ncy.get('.productpagecart').click();\ncy.get('#cart_checkout1').click();\ncy.get('#checkout_btn').click();\ncy.get('.contentpanel').should('contain', \"Thank you for shopping with us!\");",
+          "err": {},
+          "uuid": "e104fad9-3ecd-43bf-8d91-26a6fb229d50",
+          "parentUUID": "db613647-1896-437a-8551-0d99d03f81b1",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "e104fad9-3ecd-43bf-8d91-26a6fb229d50"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 12622,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

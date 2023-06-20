@@ -1,0 +1,12 @@
+{
+  "firstName": "FirstTestName",
+  "lastName": "LastTestName",
+  "email": "roSiforov@mail.com",
+  "address": "Test Address str.",
+  "city": "Kyiv",
+  "zone": "Kyiv",
+  "postCode": "37289",
+  "countryId": "Ukraine",
+  "username": "roSiforov",
+  "password": "123QWEqwe"
+}
