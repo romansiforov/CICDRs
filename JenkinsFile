@@ -12,15 +12,15 @@ pipeline {
         stage('Cypress run') { 
             steps {
                 catchError(buildResult: "SUCCESS", stageResult: 'SUCCESS'){
-                sh 'allure:clearData'
-                sh 'cy:testWithAllureReport' 
+                sh 'npm run allure:clearData'
+                sh 'npm run cy:testWithAllureReport' 
                 }
 
             }
         }
         stage('Generate report') { 
             steps {
-                sh 'allure:generateReport' 
+                sh 'npm run allure:generateReport' 
                 allure(
                     results: [['allure-results']]
                 )
